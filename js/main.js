@@ -17,7 +17,7 @@ window.onload=function() {
 			//		cometUrl += "&dateFrom=" + inputDates[0] + "&dateTo=" + inputDates[1]; 
 		console.log(date1);
 		console.log(date2);
-		string = "?aggrMethord=" + "max" + "&aggrPeriod=" + "hour";
+		string = "?aggrMethod=" + "max" + "&aggrPeriod=" + "hour";
 		string += "&dateFrom=" + date1 + "&dateTo=" + date2;
 
         document.getElementById("headTimePer").style.color = "green";
@@ -40,21 +40,6 @@ window.onload=function() {
 		console.log(string);
         MashupPlatform.wiring.pushEvent("DatesInfo", string);
     })
-	/*
-    document.querySelector("#btnMinutes").addEventListener("click", function() {
-        document.getElementById("headMinutes").style.color = "green";
-
-        MashupPlatform.wiring.pushEvent("Minutes", minutes2);
-    })*/
 
 }
-/*
-window.onload=function() {
-	let startDate = document.getElementById("startDate");
-	let endDate = document.getElementById("endDate");
-	let lastN = document.getElementById("lastN");
-	let minutes = document.getElementById("minutes");
-	
-	// startDate.addEventListener("change", function() {date1 = startDate.value});
-	
-}*/
+
